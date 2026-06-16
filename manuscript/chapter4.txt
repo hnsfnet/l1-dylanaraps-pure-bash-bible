@@ -183,7 +183,7 @@ extract() {
 
 **Example Usage:**
 
-```shell
+```text
 # Extract code blocks from MarkDown file.
 $ extract ~/projects/pure-bash/README.md '```sh' '```'
 # Output here...

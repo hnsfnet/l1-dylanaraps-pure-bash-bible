@@ -1051,7 +1051,7 @@ extract() {
 
 **Example Usage:**
 
-```shell
+```text
 # Extract code blocks from MarkDown file.
 $ extract ~/projects/pure-bash/README.md '```sh' '```'
 # Output here...
@@ -2166,7 +2166,11 @@ This will run the given command and keep it running, even after the terminal or 
 bkr() {
     (nohup "$@" &>/dev/null &)
 }
+```
 
+**Example Usage:**
+
+```shell
 bkr ./some_script.sh # some_script.sh is now running in the background
 ```
 
@@ -2182,7 +2186,11 @@ to_upper() {
 
   ptr=${ptr^^}
 }
+```
 
+**Example Usage:**
+
+```shell
 foo="bar"
 to_upper foo
 printf "%s\n" "${foo}" # BAR
