@@ -8,7 +8,7 @@ main() {
 
     # Split the README.md into chapters based on markers.
     while IFS=$'\n' read -r line; do
-        [[ "$chap" ]] && chapter[$i]+="$line"$'\n'
+        [[ "$chap" ]] && chapter[i]+="$line"$'\n'
         [[ "$line" == "<!-- CHAPTER START -->" ]] && chap=1
         [[ "$line" == "<!-- CHAPTER END -->" ]]   && { chap=; ((i++)); }
     done < README.md
